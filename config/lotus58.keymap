@@ -49,7 +49,7 @@
         compatible = "zmk,conditional-layers";
         // When both layer 1 and 2 (Symbols and Navigation) are pressed, enabled layer 3 (Numbers)
         tri_layer {
-            if-layers = <L_SYM, L_NAV>;
+            if-layers = <L_SYM L_NAV>;
             then-layer = <L_NUM>;
         };
     };

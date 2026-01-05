@@ -31,6 +31,8 @@
 // Define a custom gaming layer to avoid tap-hold trigger conflicts when gaming
 #define L_GAME 5
 
+// TODO: Create home row macros
+
 \
 /*
 // Encoders
@@ -41,7 +43,7 @@
 
 / {
     behaviors {
-        tlt: thumb_layer_tap {
+        tlt: thumb_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -57,7 +59,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <LEFT_KEYS>;
+            hold-trigger-key-positions = <RIGHT_KEYS>;
             hold-trigger-on-release;
         };
         hmr: home_row_mod_right {
@@ -68,7 +70,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <RIGHT_KEYS>;
+            hold-trigger-key-positions = <LEFT_KEYS>;
             hold-trigger-on-release;
         };
     };
@@ -88,11 +90,11 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp TILDE  &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                 &kp N6           &kp N7   &kp N8     &kp N9   &kp N0    &mo PLUS
-&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                                  &kp Y            &kp U    &kp I      &kp O    &kp P     &kp LBKT
-&kp ESC    &kp A   &kp S   &kp D     &kp F     &kp G           &trans     &kp C_MUTE  &kp H            &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B           &kp LBKT   &kp RBKT    &kp N            &kp M    &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT BSLH
-                           &kp LGUI  &kp LALT  &tlt L_SYM TAB  &kp SPACE  &kp RET     &tlt L_NAV BSPC  &kp DEL  &kp LGUI
+&kp TILDE  &kp N1        &kp N2       &kp N3       &kp N4         &kp N5                                 &kp N6           &kp N7   &kp N8     &kp N9   &kp N0    &mo PLUS
+&kp TAB    &kp Q         &kp W        &kp E        &kp R          &kp T                                  &kp Y            &kp U    &kp I      &kp O    &kp P     &kp LBKT
+&kp ESC    &hml LCTRL A  &hml LALT S  &mhl LGUI D  &hml LSHIFT F  &kp G           &trans     &kp C_MUTE  &kp H            &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z         &kp X        &kp C        &kp V          &kp B           &kp LBKT   &kp RBKT    &kp N            &kp M    &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT BSLH
+                                      &kp LGUI     &kp LALT       &tlt L_SYM TAB  &kp SPACE  &kp RET     &tlt L_NAV BSPC  &kp DEL  &kp LGUI
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };

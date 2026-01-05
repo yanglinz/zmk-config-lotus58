@@ -92,7 +92,7 @@
             bindings = <
 &kp TILDE  &kp N1        &kp N2       &kp N3       &kp N4         &kp N5                                 &kp N6           &kp N7   &kp N8     &kp N9   &kp N0    &mo PLUS
 &kp TAB    &kp Q         &kp W        &kp E        &kp R          &kp T                                  &kp Y            &kp U    &kp I      &kp O    &kp P     &kp LBKT
-&kp ESC    &hml LCTRL A  &hml LALT S  &mhl LGUI D  &hml LSHIFT F  &kp G           &trans     &kp C_MUTE  &kp H            &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
+&kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHIFT F  &kp G           &trans     &kp C_MUTE  &kp H            &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z         &kp X        &kp C        &kp V          &kp B           &kp LBKT   &kp RBKT    &kp N            &kp M    &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT BSLH
                                       &kp LGUI     &kp LALT       &tlt L_SYM TAB  &kp SPACE  &kp RET     &tlt L_NAV BSPC  &kp DEL  &kp LGUI
             >;

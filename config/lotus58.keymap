@@ -18,6 +18,18 @@
 // Define a custom gaming layer to avoid tap-hold trigger conflicts when gaming
 #define L_GAME 5
 
+
+
+/*               58 KEY MATRIX / LAYOUT MAPPING
+  ╭────────────────────────────┬────────────────────────────╮
+  │  0   1   2   3   4   5     │      6   7   8   9  10  11 │
+  │ 12  13  14  15  16  17     │     18  19  20  21  22  23 │
+  │ 24  25  26  27  28  29     │     30  31  32  33  34  35 │
+  │ 36  37  38  39  40  41  42 │ 43  44  45  46  47  48  49 │
+  ╰───────────╮ 50  51  52  53 │ 54  55  56  57 ╭───────────╯
+              ╰────────────────┴────────────────╯
+*/
+
 /*
 // Encoders
 &sensors { triggers-per-rotation = <30>; };
@@ -27,7 +39,6 @@
 
 / {
     behaviors {
-        // TODO: Change to balanced flavor and use it
         tlt: thumb_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -65,11 +76,11 @@
         symbol_layer {
             display-name = "Symbol Layer";
             bindings = <
-&trans  &trans    &trans     &trans    &trans     &trans                     &trans        &trans     &trans    &trans     &trans     &trans
-&trans  &kp EXCL  &kp HOME   &kp UP    &kp END    &kp PRCNT                  &kp C_VOL_UP  &kp PG_UP  &kp INS   &kp CARET  &kp PSCRN  &trans
-&trans  &kp HASH  &kp LEFT   &kp DOWN  &kp RIGHT  &kp DLLR   &trans  &trans  &kp C_VOL_DN  &kp LEFT   &kp UP    &kp RIGHT  &kp TILDE  &trans
-&trans  &kp AT    &kp MINUS  &kp LBRC  &kp RBRC   &kp AMPS   &trans  &trans  &kp C_MUTE    &kp PG_DN  &kp DOWN  &kp COLON  &kp STAR   &trans
-                               &trans  &trans     &trans     &trans  &trans  &trans        &trans     &trans
+&trans  &trans         &trans        &trans        &trans      &trans                     &trans        &trans     &trans    &trans     &trans     &trans
+&trans  &kp LS(TILDE)  &kp TILDE     &kp LS(N3)    &kp LS(N7)  &kp PRCNT                  &kp C_VOL_UP  &kp PG_UP  &kp INS   &kp CARET  &kp PSCRN  &trans
+&trans  &kp LS(N1)     &kp LS(UNDER) &kp LS(SEMI)  &kp RIGHT   &kp DLLR   &trans  &trans  &kp C_VOL_DN  &kp LEFT   &kp UP    &kp RIGHT  &kp TILDE  &trans
+&trans  &kp LS(N5)     &kp LS(FSLH)  &kp LS(N8)    &kp RBRC    &kp AMPS   &trans  &trans  &kp C_MUTE    &kp PG_DN  &kp DOWN  &kp COLON  &kp STAR   &trans
+                                     &trans        &trans      &trans     &trans  &trans  &trans        &trans     &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_NEXT C_PREV>;
         };

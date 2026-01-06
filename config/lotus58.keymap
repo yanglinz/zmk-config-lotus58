@@ -17,19 +17,16 @@
 #define LEFT_KEYS 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 30 38 39 40 41 42 43 44
 #define RIGHT_KEYS 6 7 8 9 10 11 18 19 20 21 22 23 31 32 33 34 35 36 37 45 46 47 48 49 50 51
 
-// The keybindings takes inspiration from the following resources:
-//
-// Keybindings inspired by https://github.com/manna-harbour/miryoku
-// Timer-less home row mod inspired by https://github.com/urob/zmk-config
-// Symbol layer according to https://getreuer.info/posts/keyboards/symbol-layer/index.html
+// The keybindings are an amalgamation of the following resources:
+// https://github.com/manna-harbour/miryoku
+// https://github.com/urob/zmk-config
+// https://getreuer.info/posts/keyboards/symbol-layer/index.html
 
 #define L_DEF 0
 #define L_SYM 1
 #define L_NAV 2
 #define L_NUM 3
 #define L_GAME 4
-
-// TODO: Create home row macros
 
 \
 /*

@@ -94,19 +94,20 @@
 &kp TAB    &kp Q         &kp W        &kp E        &kp R          &kp T                                  &kp Y            &kp U    &kp I      &kp O    &kp P     &kp LBKT
 &kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHIFT F  &kp G           &trans     &kp C_MUTE  &kp H            &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z         &kp X        &kp C        &kp V          &kp B           &kp LBKT   &kp RBKT    &kp N            &kp M    &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT BSLH
-                                      &kp LGUI     &kp LALT       &tlt L_SYM TAB  &kp SPACE  &kp RET     &tlt L_NAV BSPC  &kp DEL  &kp LGUI
+                                      &kp LGUI     &kp LALT       &tlt L_NAV TAB  &kp SPACE  &kp RET     &tlt L_SYM BSPC  &kp DEL  &kp LGUI
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
+        // TODO: Implement home row layer for Symbol and Navigation layer
         symbol_layer {
             display-name = "Symbol Layer";
             bindings = <
-&trans  &trans         &trans        &trans        &trans      &trans                     &trans        &trans     &trans    &trans     &trans     &trans
-&trans  &kp LS(TILDE)  &kp TILDE     &kp LS(N3)    &kp LS(N7)  &kp PRCNT                  &kp C_VOL_UP  &kp PG_UP  &kp INS   &kp CARET  &kp PSCRN  &trans
-&trans  &kp LS(N1)     &kp LS(UNDER) &kp LS(SEMI)  &kp RIGHT   &kp DLLR   &trans  &trans  &kp C_VOL_DN  &kp LEFT   &kp UP    &kp RIGHT  &kp TILDE  &trans
-&trans  &kp LS(N5)     &kp LS(FSLH)  &kp LS(N8)    &kp RBRC    &kp AMPS   &trans  &trans  &kp C_MUTE    &kp PG_DN  &kp DOWN  &kp COLON  &kp STAR   &trans
-                                     &trans        &trans      &trans     &trans  &trans  &trans        &trans     &trans
+&trans  &trans         &trans        &trans        &trans        &trans                        &trans        &trans     &trans    &trans     &trans     &trans
+&trans  &kp LS(TILDE)  &kp TILDE     &kp LS(N3)    &kp LS(N7)    &kp LS(NUBS)                  &trans        &trans     &kp INS   &kp CARET  &kp PSCRN  &trans
+&trans  &kp LS(N1)     &kp LS(UNDER) &kp LS(SEMI)  &kp LS(PLUS)  &kp LS(N4)    &trans  &trans  &kp C_VOL_DN  &kp LEFT   &kp UP    &kp RIGHT  &kp TILDE  &trans
+&trans  &kp LS(N5)     &kp LS(FSLH)  &kp LS(N8)    &kp PLUS      &kp NUBS      &trans  &trans  &kp C_MUTE    &kp PG_DN  &kp DOWN  &kp COLON  &kp STAR   &trans
+                                     &trans        &trans        &trans        &trans  &trans  &trans        &trans     &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_NEXT C_PREV>;
         };

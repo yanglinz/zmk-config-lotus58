@@ -27,9 +27,7 @@
 #define L_SYM 1
 #define L_NAV 2
 #define L_NUM 3
-#define L_MEDIA 4
-// Define a custom gaming layer to avoid tap-hold trigger conflicts when gaming
-#define L_GAME 5
+#define L_GAME 4
 
 // TODO: Create home row macros
 
@@ -94,7 +92,7 @@
 &kp TAB    &kp Q         &kp W        &kp E        &kp R          &kp T                                  &kp Y            &kp U    &kp I      &kp O    &kp P     &kp LBKT
 &kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHIFT F  &kp G           &trans     &kp C_MUTE  &kp H            &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z         &kp X        &kp C        &kp V          &kp B           &kp LBKT   &kp RBKT    &kp N            &kp M    &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT BSLH
-                                      &kp LGUI     &kp LALT       &tlt L_NAV TAB  &kp SPACE  &kp RET     &tlt L_SYM BSPC  &kp DEL  &kp LGUI
+                                      &kp LGUI     &kp LALT       &tlt L_NAV TAB  &kp SPACE  &kp RET     &tlt aL_SYM BSPC  &kp DEL  &kp LGUI
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
@@ -112,10 +110,11 @@
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_NEXT C_PREV>;
         };
 
-        navigation_layer {
-            display-name = "Navigation Layer";
+        // TODO: Implement some media keys on the left side
+        nav_and_media_layer {
+            display-name = "Navigation and Media Layer";
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                     &out OUT_TOG  &out OUT_USB  &out OUT_BLE  &trans      &sys_reset  &bootloader
+&trans  &trans  &trans &trans &trans  &trans                     &trans &trans &tog L_GAME &studio_unlock
 &trans          &kp INS       &kp PSCRN     &kp K_CMENU   &sys_reset    &studio_unlock                   &kp PG_UP     &trans        &kp UP        &trans      &trans      &trans
 &trans          &kp LALT      &kp LCTRL     &kp LSHFT     &bootloader   &kp CLCK        &trans   &trans  &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT   &kp DEL     &kp BSPC
 &trans          &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans          &trans   &trans  &trans        &kp C_PP      &kp C_PREV    &kp C_NEXT  &trans      &trans
@@ -126,6 +125,18 @@
 
         number_layer {
             display-name = "Number Layer";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+        };
+        
+        gaming_layer {
+            display-name = "Gaming Layer";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans

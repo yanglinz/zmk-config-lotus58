@@ -116,7 +116,7 @@
             bindings = <
 &trans  &trans     &trans    &trans    &trans      &trans                   &trans         &trans          &trans         &trans        &tog L_GAME    &studio_unlock
 &trans  &none      &none     &none     &none       &none                    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp C_AC_UNDO  &trans
-&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &none   &trans   &trans  &kp CAPSLOCK   &kp LEFT        &kp DOWN       &kp UP        &kp RIGHT      &trans 
+&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &none   &trans   &trans  &kp CAPSLOCK   &kp LEFT        &kp DOWN       &kp UP        &kp RIGHT      &trans
 &trans  &none      &none     &none     &none       &none   &trans   &trans  &kp INS        &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END        &trans
                              &trans    &trans      &trans  &trans   &trans  &trans         &trans          &trans
             >;
@@ -127,14 +127,14 @@
             display-name = "Number Layer";
             bindings = <
 &trans  &trans     &trans    &trans    &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans    &trans    &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans    &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans    &trans    &trans      &trans                  &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &trans  &trans  &trans  &kp N0  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans     &trans    &trans    &trans      &trans  &trans  &trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
                             &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
-        
+
         gaming_layer {
             display-name = "Gaming Layer";
             bindings = <

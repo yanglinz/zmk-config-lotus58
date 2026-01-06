@@ -130,7 +130,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
@@ -138,11 +138,11 @@
         gaming_layer {
             display-name = "Gaming Layer";
             bindings = <
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &tog L_GAME &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-                            &none  &none  &none  &none  &none  &none  &none  &none
+&kp ESC    &kp N1  &kp N2  &kp N3     &kp N4     &kp N5                   &none  &none  &none  &none  &tog L_GAME  &none
+&none      &kp Q   &kp W   &kp E      &kp R      &kp T                    &none  &none  &none  &none  &none        &none
+&kp LSHFT  &kp A   &kp S   &kp D      &kp F      &kp G      &none  &none  &none  &none  &none  &none  &none        &none
+&kp LCTRL  &kp Z   &kp X   &kp C      &kp V      &kp V      &none  &none  &none  &none  &none  &none  &none        &none
+                           &kp SPACE  &kp SPACE  &kp SPACE  &none  &none  &none  &none  &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };

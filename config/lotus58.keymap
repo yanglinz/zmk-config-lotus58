@@ -98,11 +98,11 @@
         symbol_layer {
             display-name = "Symbol Layer";
             bindings = <
-&trans  &trans         &trans         &trans      &trans        &trans                        &trans      &trans       &trans        &trans     &trans             &trans
-&trans  &kp LS(TILDE)  &kp TILDE      &kp LS(N3)  &kp LS(N7)    &kp LS(NUBS)                  &kp LS(N6)  &kp LS(LBKT) &kp LS(RBKT)  &kp LBKT   &kp RBKT           &trans
-&trans  &kp LS(N1)     &kp UNDER &kp  LS(SEMI)    &kp LS(PLUS)  &kp LS(N4)    &trans  &trans  &kp LS(N2)  &kp LS(N9)   &kp LS(N0)    &kp UNDER  &kp SEMI           &trans
-&trans  &kp LS(N5)     &kp LS(FSLH)   &kp LS(N8)  &kp PLUS      &kp NUBS      &trans  &trans  &kp FSLH    &kp MINUS    &kp LT        &kp GT     &kp DOUBLE_QUOTES  &trans
-                                      &trans      &trans        &trans        &trans  &trans  &trans      &trans       &trans
+&trans  &trans      &trans         &trans      &trans      &trans                        &trans      &trans       &trans        &trans     &trans             &trans
+&trans  &kp GRAVE   &kp TILDE      &kp LS(N3)  &kp LS(N7)  &kp LS(BSLH)                  &kp LS(N6)  &kp LS(LBKT) &kp LS(RBKT)  &kp LBKT   &kp RBKT           &trans
+&trans  &kp LS(N1)  &kp UNDER &kp  LS(SEMI)    &kp EQUAL   &kp LS(N4)    &trans  &trans  &kp LS(N2)  &kp LS(N9)   &kp LS(N0)    &kp UNDER  &kp SEMI           &trans
+&trans  &kp LS(N5)  &kp LS(FSLH)   &kp LS(N8)  &kp PLUS    &kp BSLH      &trans  &trans  &kp FSLH    &kp MINUS    &kp LT        &kp GT     &kp DOUBLE_QUOTES  &trans
+                                   &trans      &trans      &trans        &trans  &trans  &trans      &trans       &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_NEXT C_PREV>;
         };

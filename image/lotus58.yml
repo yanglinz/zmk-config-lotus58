@@ -156,11 +156,11 @@ layers:
     - ''
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - INS
     - HOME
     - PG DN
     - PG UP
     - END
+    - INS
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}

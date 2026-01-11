@@ -85,7 +85,7 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp GRAVE  &kp N1        &kp N2       &kp N3       &kp N4         &kp N5                                 &kp N6           &kp N7         &kp N8       &kp N9       &kp N0          &kp PLUS
+&kp GRAVE  &kp N1        &kp N2       &kp N3       &kp N4         &kp N5                                 &kp N6           &kp N7         &kp N8       &kp N9       &kp N0          &kp EQUAL
 &kp TAB    &kp Q         &kp W        &kp E        &kp R          &kp T                                  &kp Y            &kp U          &kp I        &kp O        &kp P           &kp LBKT
 &kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHIFT F  &kp G           &trans     &kp C_MUTE  &kp H            &hmr RSHIFT J  &hmr RGUI K  &hmr RALT L  &hmr RCTL SEMI  &kp SQT
 &kp LSHFT  &kp Z         &kp X        &kp C        &kp V          &kp B           &kp LBKT   &kp RBKT    &kp N            &kp M          &kp COMMA    &kp DOT      &kp FSLH        &hmr RSHFT BSLH
@@ -97,11 +97,11 @@
         symbol_layer {
             display-name = "Symbol Layer";
             bindings = <
-&trans  &trans       &trans     &trans     &trans     &trans                        &trans      &trans       &trans        &trans     &trans             &trans
-&trans  &kp GRAVE    &kp TILDE  &kp HASH   &kp AMPS   &kp PIPE                  &kp LS(N6)  &kp LS(LBKT) &kp LS(RBKT)  &kp LBKT   &kp RBKT           &trans
-&trans  &kp EXCL     &kp UNDER  &kp COLON  &kp EQUAL  &kp DOLLAR    &trans  &trans  &kp LS(N2)  &kp LS(N9)   &kp LS(N0)    &kp UNDER  &kp SEMI           &trans
-&trans  &kp PERCENT  &kp QMARK  &kp STAR   &kp PLUS   &kp BSLH      &trans  &trans  &kp FSLH    &kp MINUS    &kp LT        &kp GT     &kp DOUBLE_QUOTES  &trans
-                                   &trans  &trans     &trans        &trans  &trans  &trans      &trans       &trans
+&trans  &trans       &trans     &trans     &trans     &trans                        &trans     &trans     &trans    &trans     &trans             &trans
+&trans  &kp GRAVE    &kp TILDE  &kp HASH   &kp AMPS   &kp PIPE                      &kp CARET  &kp LBRC   &kp RBRC  &kp LBKT   &kp RBKT           &trans
+&trans  &kp EXCL     &kp UNDER  &kp COLON  &kp EQUAL  &kp DOLLAR    &trans  &trans  &kp AMPS   &kp LPAR   &kp RPAR  &kp UNDER  &kp SEMI           &trans
+&trans  &kp PERCENT  &kp QMARK  &kp STAR   &kp PLUS   &kp BSLH      &trans  &trans  &kp FSLH   &kp MINUS  &kp LT    &kp GT     &kp DOUBLE_QUOTES  &trans
+                                   &trans  &trans     &trans        &trans  &trans  &trans     &trans     &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_NEXT C_PREV>;
         };

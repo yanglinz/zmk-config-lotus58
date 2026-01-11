@@ -146,7 +146,7 @@ layers:
     - DOWN
     - UP
     - RIGHT
-    - CAPS LOCK
+    - CAPSLOCK
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - ''

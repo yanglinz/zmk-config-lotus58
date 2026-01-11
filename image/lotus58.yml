@@ -64,9 +64,9 @@ layers:
     - {t: ▽, type: trans}
     - '`'
   - - '~'
-    - Sft+3
-    - Sft+7
-    - Sft+\
+    - '#'
+    - '&'
+    - '|'
     - Sft+6
     - Sft+[
     - Sft+]
@@ -74,11 +74,11 @@ layers:
     - ']'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - Sft+1
+    - '!'
     - _
-    - Sft+;
+    - ':'
   - - '='
-    - Sft+4
+    - $
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - Sft+2
@@ -88,9 +88,9 @@ layers:
     - ;
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - Sft+5
-    - Sft+/
-    - Sft+8
+    - '%'
+    - '?'
+    - '*'
   - - +
     - \
     - {t: ▽, type: trans}

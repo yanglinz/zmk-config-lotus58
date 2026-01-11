@@ -112,7 +112,7 @@
 &trans  &trans     &trans    &trans    &trans      &trans                   &trans         &trans          &trans         &trans        &trans         &trans
 &trans  &none      &none     &none     &none       &none                    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp C_AC_UNDO  &trans
 &trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &none   &trans   &trans  &kp LEFT       &kp DOWN        &kp UP         &kp RIGHT     &kp CAPS_LOCK  &trans
-&trans  &none      &none     &none     &none       &none   &trans   &trans  &kp INS        &kp HOME        &kp PG_DN      &kp PG_UP     &kp END        &trans
+&trans  &none      &none     &none     &none       &none   &trans   &trans  &kp HOME       &kp PG_DN       &kp PG_UP      &kp END       &kp INS        &trans
                              &trans    &trans      &trans  &trans   &trans  &trans         &trans          &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;

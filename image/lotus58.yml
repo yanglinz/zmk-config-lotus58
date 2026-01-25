@@ -11,7 +11,7 @@ layers:
     - I
     - O
     - P
-    - '@'
+    - DEL
     - ESC
     - {t: A, h: LCTRL}
     - {t: S, h: LALT}
@@ -39,7 +39,7 @@ layers:
     - ','
     - .
     - /
-    - {t: CAPS, h: RSHFT}
+    - RSHFT
     - LALT
     - LGUI
     - {t: TAB, h: Navigation and Media Layer}
@@ -81,7 +81,7 @@ layers:
     - $
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - '&'
+    - '@'
     - (
     - )
     - _

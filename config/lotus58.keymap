@@ -45,12 +45,27 @@
 
 / {
     behaviors {
-        thtl: thumb_hold_tap_left {
+        tml: thumb_hold_tap_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;
+            hold-trigger-key-positions = <RIGHT_THUMB RIGHT_KEYS LEFT_KEYS>;
+            hold-trigger-on-release;
+        };
+        tmr: thumb_hold_tap_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&kp>;
+            flavor = "balanced";
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;
+            hold-trigger-key-positions = <LEFT_THUMB RIGHT_KEYS LEFT_KEYS>;
+            hold-trigger-on-release;
         };
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
@@ -95,7 +110,7 @@
 &kp TAB    &kp Q         &kp W        &kp E        &kp R          &kp T                                  &kp Y            &kp U          &kp I        &kp O        &kp P           &kp DEL
 &kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHIFT F  &kp G           &trans     &kp C_MUTE  &kp H            &hmr RSHIFT J  &hmr RGUI K  &hmr RALT L  &hmr RCTL SEMI  &kp SQT
 &kp LSHFT  &kp Z         &kp X        &kp C        &kp V          &kp B           &kp LBKT   &kp RBKT    &kp N            &kp M          &kp COMMA    &kp DOT      &kp FSLH        &kp RSHFT
-                                      &kp LALT     &sk LSHIFT     &tlt L_NAV TAB  &kp SPACE  &kp RET     &tlt L_SYM BSPC  &sk RSHIFT     &kp LGUI
+                                      &kp LALT     &sk LSHIFT     &tml L_NAV TAB  &kp SPACE  &kp RET     &tmr L_SYM BSPC  &sk RSHIFT     &kp LGUI
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };

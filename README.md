@@ -17,7 +17,8 @@ My personal [ZMK firmware](https://github.com/zmkfirmware/zmk/) configuration fo
 
 ## Building the Firmware
 
-The firmware is built via Github Actions. The output can be found in the artifact for a given run.
+The firmware is built via Github Actions. 
+The output can be found in the artifact for a given workflow run.
 
 ## Resources
 

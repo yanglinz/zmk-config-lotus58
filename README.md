@@ -11,9 +11,9 @@ My personal [ZMK firmware](https://github.com/zmkfirmware/zmk/) configuration fo
 ## Features
 
 - **58-key split layout** - Ergonomic split design with dedicated thumb clusters
-- **Homerow mods** - Timerless home row mods similar to urob.
-- symbol layer optimized for programing https://getreuer.info/posts/keyboards/symbol-layer/index.html
-- dedicated layer for gaming
+- **Homerow mods** - Timerless home row mods as described in [urob's config](https://github.com/urob/zmk-config).
+- **Symbol layer** - Optimized for programming inspired by [ShelZuuz](https://getreuer.info/posts/keyboards/symbol-layer/index.html)'s layout.
+- **Gaming layer** - Dedicated layer for gaming.
 
 ## Building the Firmware
 

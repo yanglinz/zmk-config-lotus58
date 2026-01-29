@@ -2,7 +2,7 @@
 
 My personal [ZMK firmware](https://github.com/zmkfirmware/zmk/) configuration for the [Lotus58 split keyboard](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lotus58)
 
-<img alt="Lotus58 keyboard" src="image/Lotus58.png" />
+<img alt="Lotus58 keyboard" src="image/lotus58.png" />
 
 ## Features
 

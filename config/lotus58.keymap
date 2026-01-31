@@ -5,8 +5,8 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // Mouse emulation
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 800  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 800 // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20 // default: 10
 
 // Layer names
 #define L_DEF 0
@@ -35,14 +35,7 @@
 #define QUICK_TAP_MS 175
 #define REQUIRE_PRIOR_IDLE_MS 130
 
-\
-/*
-// Encoders
-&sensors { triggers-per-rotation = <30>; };
-&left_encoder { steps = <60>; };
-&right_encoder { steps = <60>; };
-*/
-
+// Caps words
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE>;
 };
@@ -133,7 +126,7 @@
             display-name = "Default Layer";
             bindings = <
 &kp GRAVE  &kp N1        &kp N2       &kp N3       &kp N4         &kp N5                                 &kp N6           &kp N7         &kp N8       &kp N9       &kp N0          &kp EQUAL
-&kp TAB    &kp Q         &kp W        &kp E        &kp R          &kp T                                  &kp Y            &kp U          &kp I        &kp O        &kp P           &kp DEL
+&kp TAB    &kp Q         &kp W        &kp E        &kp R          &kp T                                  &kp Y            &kp U          &kp I        &kp O        &kp P           &kp BACKSPACE
 &kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHIFT F  &kp G           &trans     &kp C_MUTE  &kp H            &hmr RSHIFT J  &hmr RGUI K  &hmr RALT L  &hmr RCTL SEMI  &kp SQT
 &kp LSHFT  &kp Z         &kp X        &kp C        &kp V          &kp B           &kp LBKT   &kp RBKT    &kp N            &kp M          &kp COMMA    &kp DOT      &kp FSLH        &kp RSHFT
                                       &kp LALT     &tdl           &tml L_NAV TAB  &kp SPACE  &kp RET     &tmr L_SYM BSPC  &tdr           &kp LGUI
@@ -157,7 +150,7 @@
             display-name = "Navigation and Media Layer";
             bindings = <
 &trans  &trans     &trans    &trans    &trans      &trans                   &trans         &trans          &trans         &trans        &trans         &tog L_GAME
-&trans  &none      &none     &none     &none       &none                    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp C_AC_UNDO  &trans
+&trans  &none      &none     &none     &none       &none                    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp C_AC_UNDO  &DEL
 &trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &none   &trans   &trans  &kp LEFT       &kp DOWN        &kp UP         &kp RIGHT     &kp CAPSLOCK   &trans
 &trans  &none      &none     &none     &none       &none   &trans   &trans  &kp HOME       &kp PG_DN       &kp PG_UP      &kp END       &kp INS        &trans
                              &trans    &trans      &trans  &trans   &trans  &trans         &trans          &trans

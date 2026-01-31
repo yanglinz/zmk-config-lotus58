@@ -31,9 +31,9 @@
 #define L_GAME 4
 
 // Tap hold timings
-#define TAPPING_TERM_MS 350
+#define TAPPING_TERM_MS 270 
 #define QUICK_TAP_MS 175
-#define REQUIRE_PRIOR_IDLE_MS 150
+#define REQUIRE_PRIOR_IDLE_MS 130
 
 \
 /*

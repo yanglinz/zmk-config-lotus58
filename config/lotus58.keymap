@@ -140,7 +140,7 @@
             display-name = "Symbol Layer";
             bindings = <
 &trans  &trans       &trans     &trans     &trans     &trans                        &trans     &trans     &trans    &trans     &trans             &trans
-&trans  &kp GRAVE    &kp TILDE  &kp HASH   &kp AMPS   &kp PIPE                      &kp CARET  &kp LBRC   &kp RBRC  &kp LBKT   &kp RBKT           &trans
+&trans  &kp GRAVE    &kp TILDE  &kp HASH   &kp AMPS   &kp PIPE                      &kp CARET  &kp LBRC   &kp RBRC  &kp LBKT   &kp RBKT           &kp DEL
 &trans  &kp EXCL     &kp UNDER  &kp COLON  &kp EQUAL  &kp DOLLAR    &trans  &trans  &kp AT     &kp LPAR   &kp RPAR  &kp UNDER  &kp SEMI           &trans
 &trans  &kp PERCENT  &kp QMARK  &kp STAR   &kp PLUS   &kp BSLH      &trans  &trans  &kp FSLH   &kp MINUS  &kp LT    &kp GT     &kp DOUBLE_QUOTES  &trans
                                    &trans  &trans     &trans        &trans  &trans  &trans     &trans     &trans

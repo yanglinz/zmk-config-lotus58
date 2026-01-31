@@ -127,11 +127,11 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp GRAVE  &kp N1        &kp N2       &kp N3       &kp N4         &kp N5                                 &kp N6           &kp N7         &kp N8       &kp N9       &kp N0          &kp EQUAL
-&kp TAB    &kp Q         &kp W        &kp E        &kp R          &kp T                                  &kp Y            &kp U          &kp I        &kp O        &kp P           &kp BACKSPACE
-&kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHIFT F  &kp G           &trans     &kp C_MUTE  &kp H            &hmr RSHIFT J  &hmr RGUI K  &hmr RALT L  &hmr RCTL SEMI  &kp SQT
-&kp LSHFT  &kp Z         &kp X        &kp C        &kp V          &kp B           &kp LBKT   &kp RBKT    &kp N            &kp M          &kp COMMA    &kp DOT      &kp FSLH        &kp RSHFT
-                                      &kp LALT     &tdl           &tml L_NAV TAB  &kp SPACE  &kp RET     &tmr L_SYM BSPC  &tdr           &kp LGUI
+&kp GRAVE  &kp N1        &kp N2       &kp N3       &kp N4         &kp N5                                 &kp N6     &kp N7         &kp N8       &kp N9       &kp N0          &kp EQUAL
+&kp TAB    &kp Q         &kp W        &kp E        &kp R          &kp T                                  &kp Y      &kp U          &kp I        &kp O        &kp P           &kp BACKSPACE
+&kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHIFT F  &kp G           &trans     &kp C_MUTE  &kp H      &hmr RSHIFT J  &hmr RGUI K  &hmr RALT L  &hmr RCTL SEMI  &kp SQT
+&kp LSHFT  &kp Z         &kp X        &kp C        &kp V          &kp B           &kp LBKT   &kp RBKT    &kp N      &kp M          &kp COMMA    &kp DOT      &kp FSLH        &kp RSHFT
+                                      &kp LALT     &tdl           &tml L_NAV TAB  &kp SPACE  &kp RET     &mo L_SYM  &tdr           &kp LGUI
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };

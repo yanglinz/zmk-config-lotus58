@@ -5,7 +5,9 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // Mouse emulation
+#undef ZMK_POINTING_DEFAULT_MOVE_VAL
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 800 // default: 600
+#undef ZMK_POINTING_DEFAULT_SCRL_VAL 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20 // default: 10
 
 // Layer names

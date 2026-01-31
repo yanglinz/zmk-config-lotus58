@@ -43,6 +43,11 @@
 &right_encoder { steps = <60>; };
 */
 
+// scroll up
+// scroll down
+// caps word
+// smart number
+
 / {
     behaviors {
         tml: thumb_hold_tap_left {

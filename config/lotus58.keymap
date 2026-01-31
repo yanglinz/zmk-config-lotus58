@@ -152,7 +152,7 @@
             display-name = "Navigation and Media Layer";
             bindings = <
 &trans  &trans     &trans    &trans    &trans      &trans                   &trans         &trans          &trans         &trans        &trans         &tog L_GAME
-&trans  &none      &none     &none     &none       &none                    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp C_AC_UNDO  &DEL
+&trans  &none      &none     &none     &none       &none                    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp C_AC_UNDO  &kp DEL
 &trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &none   &trans   &trans  &kp LEFT       &kp DOWN        &kp UP         &kp RIGHT     &kp CAPSLOCK   &trans
 &trans  &none      &none     &none     &none       &none   &trans   &trans  &kp HOME       &kp PG_DN       &kp PG_UP      &kp END       &kp INS        &trans
                              &trans    &trans      &trans  &trans   &trans  &trans         &trans          &trans
